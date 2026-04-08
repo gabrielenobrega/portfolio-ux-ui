@@ -1,2 +1,11 @@
 # portfolio-ux-acessibilidade
-Portfólio de UX com foco em acessibilidade digital, apresentando auditorias de interfaces, análises de usabilidade e propostas de melhoria baseadas em boas práticas.
+Portfólio desenvolvido com foco em UX e acessibilidade digital.
+
+Inclui:
+- Auditorias de acessibilidade (WAVE, NVDA)
+- Análises de usabilidade e carga cognitiva
+- Propostas de melhoria e redesign de interfaces
+
+Tecnologias:
+- HTML
+- CSS
