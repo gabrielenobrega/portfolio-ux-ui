@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto - Magazine Luiza</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <a href="../../index.html" class="back">← Voltar</a>
+
+    <h1>Auditoria de UX + Acessibilidade — Magazine Luiza</h1>
+
+    <div class="tag">UX</div>
+    <div class="tag">Acessibilidade</div>
+
+    <div class="section">
+      <h2>Contexto</h2>
+      <p>
+        Realizei uma análise do site de e-commerce Magazine Luiza com o objetivo de 
+        identificar problemas de usabilidade e acessibilidade que impactam a experiência do usuário.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Problemas de Acessibilidade</h2>
+      <ul>
+        <li>Imagens com textos alternativos genéricos ou redundantes</li>
+        <li>Uso inadequado de atributos ARIA</li>
+        <li>Estrutura de headings pouco clara</li>
+        <li>Elementos como banners e preços não interpretados corretamente por leitores de tela</li>
+        <li>Foco de navegação pouco visível em algumas áreas</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Problemas de UX</h2>
+      <ul>
+        <li>Alta densidade de informação na página inicial</li>
+        <li>Excesso de estímulos visuais (banners e cores)</li>
+        <li>Dificuldade em identificar ações principais</li>
+        <li>Baixa hierarquia visual</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Impacto no Usuário</h2>
+      <p>
+        Usuários que utilizam leitores de tela podem ter dificuldade em compreender 
+        elementos importantes como botões e preços.
+      </p>
+      <p>
+        Usuários com TDAH ou sensibilidade a estímulos podem se sentir sobrecarregados 
+        devido à quantidade de informações simultâneas.
+      </p>
+      <p>
+        A falta de hierarquia visual dificulta a navegação e a tomada de decisão.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Soluções Propostas</h2>
+      <ul>
+        <li>Melhorar descrições de imagens (atributo alt)</li>
+        <li>Corrigir uso de ARIA conforme boas práticas</li>
+        <li>Reorganizar estrutura de headings</li>
+        <li>Garantir acessibilidade em elementos importantes</li>
+        <li>Melhorar contraste e visibilidade do foco</li>
+        <li>Reduzir estímulos visuais</li>
+        <li>Melhorar hierarquia visual</li>
+      </ul>
+    </div>
+
+    <div class="section">
+  <h2>Redesign da listagem de produtos</h2>
+
+  <p>
+    A seção de listagem de produtos foi selecionada por ser um ponto crítico na tomada de decisão do usuário.
+    A análise identificou alta densidade de informação e baixa hierarquia visual, dificultando a escaneabilidade
+    e a identificação de elementos essenciais como preço e avaliação.
+  </p>
+
+  <div class="before-after-vertical">
+
+    <div class="before">
+      <h3>Antes</h3>
+      <img src="imagens/antes.png" alt="Listagem de produtos original com excesso de informação e baixa hierarquia visual">
+      <p>
+        A versão original apresenta múltiplos elementos com o mesmo peso visual, como selos,
+        avaliações, preços e benefícios, resultando em sobrecarga cognitiva e dificuldade de leitura.
+      </p>
+    </div>
+
+    <div class="after">
+      <h3>Depois</h3>
+      <img src="imagens/depois.png" alt="Redesign com melhor hierarquia visual, maior espaçamento e foco no preço">
+      <p>
+        A proposta reorganiza a hierarquia visual dos elementos, priorizando o preço como principal
+        ponto de decisão. Informações secundárias foram mantidas com menor destaque, reduzindo a carga
+        cognitiva e melhorando a clareza da interface.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="improvements">
+    <h3>Principais melhorias aplicadas</h3>
+    <ul>
+      <li>Aumento de espaçamento entre elementos para melhor legibilidade</li>
+      <li>Reorganização da hierarquia visual com foco no preço</li>
+      <li>Redução de estímulos visuais e simplificação do layout</li>
+      <li>Melhoria de contraste e legibilidade tipográfica</li>
+      <li>Manutenção de informações relevantes com menor peso visual</li>
+    </ul>
+  </div>
+
+</div>
+
+    <div class="section">
+      <h2>Conclusão</h2>
+      <p>
+        As melhorias propostas tornam o site mais acessível e reduzem a carga cognitiva, 
+        proporcionando uma experiência mais clara e eficiente para diferentes perfis de usuários.
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
