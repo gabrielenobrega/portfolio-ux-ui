@@ -1,125 +1,441 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gabriele Nóbrega | UX/UI & Acessibilidade</title>
-  <meta name="description" content="Portfólio de Gabriele Nóbrega, especialista em UX/UI e acessibilidade digital." />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Portfólio de Gabriele Nóbrega, UX/UI Designer com formação em Ciência da Computação. Projetos de UX Research, UI Design, prototipação e experiência do usuário."
+  >
+
+  <meta name="theme-color" content="#0e0e11">
+
+  <title>Gabriele Nóbrega | UX/UI Designer</title>
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <header class="container hero">
-    <h1>Tornando interfaces digitais mais acessíveis e fáceis de entender.</h1>
-    <p class="subtitle">
-      Gabriele Nóbrega — UX/UI Designer com foco em acessibilidade digital.
-      Transformo interfaces complexas em experiências mais claras, inclusivas e fáceis de usar.
-    </p>
+  <!-- CABEÇALHO -->
 
-    <a href="#projetos" class="cta">Ver projetos</a>
+  <header class="site-header">
 
-    <nav aria-label="Navegação principal">
-      <ul class="nav">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+    <div class="container header-content">
+
+      <a href="#inicio" class="logo" aria-label="Gabriele Nóbrega, início">
+        GN<span>.</span>
+      </a>
+
+      <nav aria-label="Navegação principal">
+
+        <ul class="nav">
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+
+      </nav>
+
+    </div>
+
   </header>
 
-  <main class="container">
 
-    <section id="sobre">
-      <h2>Sobre mim</h2>
-      <p>
-        Sou bacharela em Ciência da Computação com foco em experiência do usuário e acessibilidade digital.
-        Analiso interfaces digitais identificando problemas de usabilidade, acessibilidade e clareza,
-        propondo soluções para tornar produtos mais inclusivos.
-      </p>
-      <p>
-        Tenho interesse em acessibilidade cognitiva, projetando experiências mais organizadas,
-        intuitivas e com menor carga mental — especialmente para pessoas neurodivergentes.
-    </section>
+  <main>
 
-    <section id="projetos">
-      <h2>Projetos</h2>
+    <!-- HERO -->
 
-      <p class="intro-projetos">
-        Estudos de caso com foco em identificar problemas reais de usabilidade e acessibilidade,
-        propondo melhorias para tornar interfaces mais inclusivas e eficientes.
-      </p>
+    <section id="inicio" class="hero">
 
-      <article class="projeto">
-        <h3>Auditoria UX/UI + Acessibilidade — Magazine Luiza</h3>
-        <p>
-           Análise de e-commerce com foco em acessibilidade e experiência do usuário,
-           identificando problemas de navegação, excesso de informação e barreiras para leitores de tela.
+      <div class="container">
+
+        <p class="eyebrow">
+          UX/UI DESIGNER
         </p>
-        <ul>
-          <li>UX/UI</li>
-          <li>Acessibilidade</li>
-          <li>Auditoria</li>
-        </ul>
-        <a href="projects/MagazineLuiza/index.html"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Ver projeto Magazine Luiza">
-          Ver projeto
-        </a>
-      </article>
 
-      <article class="projeto">
-        <h3>Auditoria UX + Acessibilidade — Clínica SiM</h3>
-        <p>
-          Avaliação de site institucional com foco em clareza, legibilidade e acessibilidade,
-          incluindo testes com teclado e leitor de tela.
-        </p>
-        <ul>
-          <li>UX</li>
-          <li>Acessibilidade</li>
-          <li>Leitor de tela</li>
-        </ul>
-        <a href="projects/ClinicaSiM/index.html"
-           target="_blank"
-           rel="noopener noreferrer">
-          Ver projeto
-        </a>
-      </article>
+        <h1>
+          Projetando experiências digitais
+          <span>mais claras, intuitivas e humanas.</span>
+        </h1>
 
-      <article class="projeto">
-        <h3>Auditoria UX + Acessibilidade — G1</h3>
-        <p>
-          Análise de portal de notícias com foco em experiência de leitura,
-          acessibilidade cognitiva e redução de sobrecarga de informação.
+        <p class="hero-description">
+          Sou Gabriele Nóbrega, UX/UI Designer com formação
+          em Ciência da Computação e especialização em
+          UX/UI e Produtos Digitais em andamento.
+
+          Combino pesquisa, usabilidade e design de
+          interfaces para desenvolver soluções digitais
+          centradas nas necessidades dos usuários.
         </p>
-        <ul>
-          <li>UX</li>
-          <li>Acessibilidade</li>
-          <li>Carga cognitiva</li>
-        </ul>
-        <a href="projects/G1/index.html"
-           target="_blank"
-           rel="noopener noreferrer">
-          Ver projeto
+
+        <div class="hero-actions">
+
+        <a href="#projetos" class="cta">
+          Explorar projetos
+          <span aria-hidden="true">↗</span>
         </a>
-      </article>
+
+        <a
+          href="documents/Curriculo_Gabriele_Nobrega.pdf"
+          class="secondary-button"
+          download="Curriculo_Gabriele_Nobrega.pdf"
+          type="application/pdf"
+        >
+          Baixar currículo
+          <span aria-hidden="true">↓</span>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/gabrielenobrega"
+          class="secondary-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Meu LinkedIn
+          <span aria-hidden="true">↗</span>
+        </a>
+
+        </div>
+
+        <div class="hero-skills" aria-label="Áreas de atuação">
+          <span>UX Research</span>
+          <span>UI Design</span>
+          <span>Prototipação</span>
+          <span>Testes de Usabilidade</span>
+          <span>Design Responsivo</span>
+        </div>
+
+      </div>
 
     </section>
 
-    <section id="contato">
-      <h2>Contato</h2>
-      <p>
-      Conecte-se comigo:
-      <a href="mailto:gabriele.on@hotmail.com">Email</a> ·
-      <a href="https://www.linkedin.com/in/gabrielenobrega" target="_blank">LinkedIn</a> ·
-      <a href="https://github.com/gabrielenobrega" target="_blank">GitHub</a>
-      </p>
+
+    <!-- PROJETOS -->
+
+    <section id="projetos" class="projects-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">PORTFÓLIO</p>
+
+          <h2>Projetos selecionados</h2>
+
+          <p>
+            Uma seleção de projetos que demonstram
+            meu processo de pesquisa, definição
+            de problemas, desenvolvimento de
+            soluções e refinamento de interfaces.
+          </p>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+          <!-- PROJETO ITAÚ -->
+
+          <article class="project-card">
+
+            <a
+              href="projects/EcossistemaItau/index.html"
+              class="project-image-link"
+              aria-label="Ver case Ecossistema Digital Itaú"
+            >
+
+              <img
+                src="images/itau-capa.png"
+                alt="Prévia das interfaces desenvolvidas para o Ecossistema Digital Itaú"
+                loading="lazy"
+              >
+
+            </a>
+
+            <div class="project-content">
+
+              <div class="project-meta">
+                <span>01 / UX/UI DESIGN</span>
+                <span>Projeto acadêmico</span>
+              </div>
+
+              <h3>Ecossistema Digital Itaú</h3>
+
+              <p>
+                Proposta de ecossistema financeiro
+                com quatro soluções integradas,
+                desenvolvida a partir de pesquisa,
+                fluxos de navegação, prototipação
+                e testes de usabilidade.
+
+                O projeto evoluiu a partir dos
+                feedbacks recebidos e resultou
+                em interfaces responsivas para
+                diferentes dispositivos.
+              </p>
+
+              <div class="project-tags">
+                <span>UX Research</span>
+                <span>UI Design</span>
+                <span>Testes de Usabilidade</span>
+                <span>Figma</span>
+              </div>
+
+              <a
+                href="projects/EcossistemaItau/index.html"
+                class="project-link"
+              >
+                Explorar case
+                <span aria-hidden="true">↗</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- PROJETO NEUROPLUGIN -->
+
+          <article class="project-card">
+
+            <a
+              href="projects/Neuroplugin/index.html"
+              class="project-image-link"
+              aria-label="Ver case Neuroplugin"
+            >
+
+              <img
+                src="images/neuroplugin-capa.png"
+                alt="Prévia da interface da extensão de acessibilidade Neuroplugin"
+                loading="lazy"
+              >
+
+            </a>
+
+            <div class="project-content">
+
+              <div class="project-meta">
+                <span>02 / UX/UI + DESENVOLVIMENTO</span>
+                <span>TCC · 2025</span>
+              </div>
+
+              <h3>Neuroplugin</h3>
+
+              <p>
+                Extensão funcional para Google Chrome
+                desenvolvida para oferecer recursos
+                de personalização visual e leitura.
+
+                O projeto combinou pesquisa sobre
+                acessibilidade digital, decisões
+                de UX/UI, prototipação no Figma,
+                desenvolvimento front-end e
+                testes técnicos.
+              </p>
+
+              <div class="project-tags">
+                <span>UX Research</span>
+                <span>Acessibilidade</span>
+                <span>UI Design</span>
+                <span>JavaScript</span>
+              </div>
+
+              <a
+                href="projects/Neuroplugin/index.html"
+                class="project-link"
+              >
+                Explorar case
+                <span aria-hidden="true">↗</span>
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SOBRE MIM -->
+
+    <section id="sobre" class="about-section">
+
+      <div class="container about-grid">
+
+        <div class="about-heading">
+
+          <p class="eyebrow">SOBRE MIM</p>
+
+          <h2>
+            Design orientado por
+            pessoas, pesquisa
+            e tecnologia.
+          </h2>
+
+        </div>
+
+
+        <div class="about-content">
+
+          <p>
+            Sou bacharela em Ciência da Computação
+            pela Universidade de Fortaleza (UNIFOR)
+            e estou aprofundando minha formação
+            em UX/UI e Produtos Digitais pela EBAC.
+          </p>
+
+          <p>
+            Minha trajetória une conhecimentos
+            de tecnologia e design, permitindo
+            compreender tanto as necessidades
+            dos usuários quanto as possibilidades
+            de implementação de produtos digitais.
+          </p>
+
+          <p>
+            Tenho experiência acadêmica com
+            pesquisa exploratória, personas,
+            fluxos de navegação, wireframes,
+            prototipação, testes de usabilidade,
+            design de interfaces e acessibilidade.
+          </p>
+
+          <p>
+            Busco minha primeira oportunidade
+            profissional na área de UX/UI Design,
+            onde possa contribuir com soluções
+            intuitivas, funcionais e centradas
+            nas pessoas.
+          </p>
+
+
+          <div class="about-details">
+
+            <div class="detail-group">
+
+              <h3>Competências</h3>
+
+              <ul>
+                <li>UX Research</li>
+                <li>Wireframes e fluxos</li>
+                <li>Prototipação</li>
+                <li>UI Design</li>
+                <li>Testes de usabilidade</li>
+                <li>Design responsivo</li>
+                <li>Acessibilidade digital</li>
+              </ul>
+
+            </div>
+
+
+            <div class="detail-group">
+
+              <h3>Ferramentas e conhecimentos</h3>
+
+              <ul>
+                <li>Figma</li>
+                <li>HTML e CSS</li>
+                <li>JavaScript</li>
+                <li>GitHub</li>
+                <li>Inglês avançado</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTATO -->
+
+    <section id="contato" class="contact-section">
+
+      <div class="container">
+
+        <p class="eyebrow">CONTATO</p>
+
+        <h2>
+          Vamos criar experiências
+          digitais melhores?
+        </h2>
+
+        <p>
+          Estou aberta a oportunidades em UX/UI Design,
+          Product Design e projetos relacionados
+          à experiência do usuário.
+        </p>
+
+        <a
+          href="mailto:gabriele.on@hotmail.com"
+          class="cta"
+        >
+          Entrar em contato
+          <span aria-hidden="true">↗</span>
+        </a>
+
+        <div class="social-links">
+
+          <a
+            href="https://www.linkedin.com/in/gabrielenobrega"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn ↗
+          </a>
+
+          <a
+            href="https://github.com/gabrielenobrega"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub ↗
+          </a>
+
+          <a href="mailto:gabriele.on@hotmail.com">
+            E-mail ↗
+          </a>
+
+        </div>
+
+      </div>
+
     </section>
 
   </main>
 
-  <footer class="container">
-    <p>© 2026 — Gabriele Nóbrega</p>
+
+  <!-- RODAPÉ -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-content">
+
+      <p>
+        © 2026 Gabriele Nóbrega
+      </p>
+
+      <p>
+        UX/UI Designer · Portfólio
+      </p>
+
+    </div>
+
   </footer>
 
 </body>

@@ -1,0 +1,859 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Case de UX/UI Design do Neuroplugin, uma extensão para Google Chrome desenvolvida com foco em acessibilidade digital, personalização visual e experiência de navegação."
+  >
+
+  <title>Neuroplugin | Case UX/UI</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <a href="../../index.html" class="back">
+      ← Voltar ao portfólio
+    </a>
+
+
+    <!-- ===================================
+         01. APRESENTAÇÃO
+         =================================== -->
+
+    <header class="hero">
+
+      <div class="tags">
+        <span class="tag">UX Research</span>
+        <span class="tag">UI Design</span>
+        <span class="tag">Acessibilidade</span>
+        <span class="tag">Prototipação</span>
+        <span class="tag">Front-end</span>
+      </div>
+
+      <h1>Neuroplugin</h1>
+
+      <p class="subtitle">
+        Uma extensão de acessibilidade para tornar
+        a navegação na web mais adaptável a
+        diferentes necessidades cognitivas e visuais.
+      </p>
+
+      <p class="intro">
+        O Neuroplugin é uma extensão desenvolvida
+        para o Google Chrome que oferece recursos
+        de personalização visual, leitura e foco.
+
+        O projeto foi criado como Trabalho de
+        Conclusão de Curso em Ciência da Computação,
+        combinando pesquisa exploratória,
+        princípios de UX/UI, prototipação,
+        desenvolvimento e testes técnicos.
+      </p>
+
+      <div class="project-info">
+
+        <div>
+          <strong>Projeto</strong>
+          <span>TCC — Ciência da Computação</span>
+        </div>
+
+        <div>
+          <strong>Ano</strong>
+          <span>2025</span>
+        </div>
+
+        <div>
+          <strong>Atuação</strong>
+          <span>Pesquisa, UX/UI e desenvolvimento</span>
+        </div>
+
+        <div>
+          <strong>Ferramentas</strong>
+          <span>Figma, HTML, CSS e JavaScript</span>
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <!-- ===================================
+         02. VISÃO GERAL
+         =================================== -->
+
+    <section class="section">
+
+      <h2>01. Visão geral do produto</h2>
+
+      <p>
+        A extensão permite que o usuário ajuste
+        a apresentação de páginas da web de acordo
+        com suas preferências de leitura e
+        necessidades visuais.
+      </p>
+
+      <p>
+        Por meio de uma interface compacta,
+        é possível ativar recursos como
+        espaçamento de texto, leitura simplificada,
+        modo foco, modo noturno suave e
+        filtros de daltonismo.
+      </p>
+
+      <figure class="project-image">
+
+        <img
+          src="imagens/neuroplugin-interface.png"
+          alt="Interface principal da extensão Neuroplugin, com controles para personalização de fonte e cores"
+          loading="lazy"
+        >
+
+        <figcaption>
+          Interface principal do Neuroplugin,
+          desenvolvida para facilitar o acesso
+          aos recursos de personalização.
+        </figcaption>
+
+      </figure>
+
+    </section>
+
+
+    <!-- ===================================
+         03. CONTEXTO
+         =================================== -->
+
+    <section class="section">
+
+      <h2>02. Contexto</h2>
+
+      <p>
+        A navegação na web envolve diferentes
+        elementos visuais, textos, cores e
+        estruturas de informação.
+      </p>
+
+      <p>
+        Para pessoas com diferentes perfis
+        cognitivos e perceptivos, determinados
+        padrões de apresentação podem criar
+        barreiras relacionadas à concentração,
+        legibilidade e conforto visual.
+      </p>
+
+      <p>
+        O Neuroplugin surgiu da proposta de
+        oferecer maior controle sobre a
+        experiência de navegação, permitindo
+        que os usuários personalizem a
+        apresentação dos conteúdos sem
+        depender exclusivamente das
+        configurações de cada site.
+      </p>
+
+    </section>
+
+
+    <!-- ===================================
+         04. PROBLEMA
+         =================================== -->
+
+    <section class="section">
+
+      <h2>03. O problema</h2>
+
+      <div class="highlight">
+
+        <p>
+          Como oferecer uma experiência de
+          navegação mais adaptável para pessoas
+          que enfrentam dificuldades de foco,
+          leitura e processamento de
+          estímulos visuais?
+        </p>
+
+      </div>
+
+      <p>
+        O desafio consistiu em desenvolver
+        uma solução que oferecesse diferentes
+        opções de personalização sem tornar
+        a própria interface da ferramenta
+        excessivamente complexa.
+      </p>
+
+    </section>
+
+
+    <!-- ===================================
+         05. PESQUISA
+         =================================== -->
+
+    <section class="section">
+
+      <h2>04. Pesquisa e levantamento de necessidades</h2>
+
+      <p>
+        O processo começou com uma pesquisa
+        exploratória sobre acessibilidade digital,
+        neurodivergência e ergonomia cognitiva.
+      </p>
+
+      <p>
+        Foram analisadas referências bibliográficas,
+        recomendações de acessibilidade,
+        incluindo WCAG e WAI-ARIA,
+        e observações empíricas sobre
+        dificuldades de navegação.
+      </p>
+
+      <h3>Principais necessidades identificadas</h3>
+
+      <ul>
+
+        <li>
+          Reduzir estímulos visuais que possam
+          prejudicar a concentração.
+        </li>
+
+        <li>
+          Oferecer ajustes de espaçamento
+          para melhorar a legibilidade.
+        </li>
+
+        <li>
+          Permitir alterações de luminosidade
+          e contraste.
+        </li>
+
+        <li>
+          Disponibilizar recursos visuais
+          para diferentes necessidades
+          de percepção de cores.
+        </li>
+
+        <li>
+          Simplificar a apresentação de
+          conteúdos durante a leitura.
+        </li>
+
+        <li>
+          Garantir que as alterações possam
+          ser desativadas e revertidas.
+        </li>
+
+      </ul>
+
+      <p>
+        Esses requisitos orientaram tanto
+        a escolha das funcionalidades
+        quanto a organização da interface
+        da extensão.
+      </p>
+
+    </section>
+
+
+    <!-- ===================================
+         06. PERSONA
+         =================================== -->
+
+    <section class="section">
+
+      <h2>05. Persona e direcionamento de UX</h2>
+
+      <p>
+        Para orientar as decisões do projeto,
+        foi construída uma persona baseada
+        em dados secundários, literatura
+        especializada e princípios de
+        design inclusivo.
+      </p>
+
+      <p>
+        A persona representava um usuário
+        com TDAH e sensibilidade a estímulos
+        visuais, ajudando a definir
+        prioridades relacionadas à
+        concentração, simplicidade
+        e personalização.
+      </p>
+
+      <div class="highlight">
+
+        <p>
+          A principal diretriz de design
+          foi oferecer recursos acessíveis
+          por meio de uma interface simples,
+          com controles identificáveis
+          e interações diretas.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================
+         07. DECISÕES DE UX
+         =================================== -->
+
+    <section class="section">
+
+      <h2>06. Decisões de UX e UI</h2>
+
+      <p>
+        As decisões de interface foram
+        orientadas pelas necessidades
+        identificadas na pesquisa e
+        pelo objetivo de reduzir
+        a complexidade de interação.
+      </p>
+
+      <div class="solutions-grid">
+
+        <article class="solution-card">
+
+          <h3>Simplicidade visual</h3>
+
+          <p>
+            Organização compacta dos controles,
+            com poucos elementos e
+            identificação direta das funções.
+          </p>
+
+        </article>
+
+        <article class="solution-card">
+
+          <h3>Personalização</h3>
+
+          <p>
+            Diferentes modos de leitura
+            e ajustes visuais para permitir
+            que cada usuário adapte
+            a experiência às suas preferências.
+          </p>
+
+        </article>
+
+        <article class="solution-card">
+
+          <h3>Controle do usuário</h3>
+
+          <p>
+            Possibilidade de ativar,
+            desativar e restaurar
+            configurações de acessibilidade.
+          </p>
+
+        </article>
+
+        <article class="solution-card">
+
+          <h3>Organização das funções</h3>
+
+          <p>
+            Agrupamento dos recursos
+            relacionados à fonte e às cores,
+            facilitando a localização
+            das opções disponíveis.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================
+         08. SOLUÇÃO
+         =================================== -->
+
+    <section class="section">
+
+      <h2>07. A solução: Neuroplugin</h2>
+
+      <p>
+        A solução desenvolvida foi uma
+        extensão para Google Chrome
+        com modos independentes de
+        personalização visual.
+      </p>
+
+      <p>
+        O usuário pode selecionar recursos
+        conforme suas necessidades,
+        realizando ajustes diretamente
+        pela interface da extensão.
+      </p>
+
+      <h3>Funcionalidades desenvolvidas</h3>
+
+      <div class="solutions-grid">
+
+        <article class="solution-card">
+
+          <h3>Modo Foco</h3>
+
+          <p>
+            Recurso de destaque visual
+            para auxiliar a atenção
+            durante a navegação.
+          </p>
+
+        </article>
+
+        <article class="solution-card">
+
+          <h3>Leitura simplificada</h3>
+
+          <p>
+            Ajustes na apresentação
+            do conteúdo para reduzir
+            a complexidade visual.
+          </p>
+
+        </article>
+
+        <article class="solution-card">
+
+          <h3>Modo Espaçado</h3>
+
+          <p>
+            Ampliação dos espaçamentos
+            para favorecer a legibilidade
+            do texto.
+          </p>
+
+        </article>
+
+        <article class="solution-card">
+
+          <h3>Modo Disléxico</h3>
+
+          <p>
+            Opção de apresentação textual
+            voltada à personalização
+            da experiência de leitura.
+          </p>
+
+        </article>
+
+        <article class="solution-card">
+
+          <h3>Modo Noturno Suave</h3>
+
+          <p>
+            Ajustes de luminosidade
+            e contraste para uma
+            apresentação visual mais suave.
+          </p>
+
+        </article>
+
+        <article class="solution-card">
+
+          <h3>Filtros de daltonismo</h3>
+
+          <p>
+            Filtros para protanomalia,
+            deuteranomalia e tritanomalia.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================
+         09. DEMONSTRAÇÃO
+         =================================== -->
+
+    <section class="section">
+
+      <h2>08. Demonstração visual dos modos</h2>
+
+      <p>
+        Uma parte importante do projeto
+        foi observar como os recursos
+        alteravam visualmente a
+        apresentação das páginas.
+      </p>
+
+      <p>
+        As comparações a seguir
+        demonstram uma seleção
+        de diferentes modos
+        de acessibilidade.
+      </p>
+
+
+      <!-- ANTES E DEPOIS -->
+
+      <div class="before-after-vertical">
+
+        <div class="before">
+
+          <h3>Modo padrão</h3>
+
+          <img
+            src="imagens/modo-padrao.png"
+            alt="Página web com sua apresentação visual padrão, antes da ativação do modo noturno suave"
+            loading="lazy"
+          >
+
+          <p>
+            Apresentação original da página,
+            antes da aplicação dos ajustes
+            visuais do Neuroplugin.
+          </p>
+
+        </div>
+
+
+        <div class="after">
+
+          <h3>Modo Noturno Suave</h3>
+
+          <img
+            src="imagens/modo-noturno.png"
+            alt="A mesma página web após a ativação do modo noturno suave do Neuroplugin"
+            loading="lazy"
+          >
+
+          <p>
+            O modo noturno suave modifica
+            a apresentação da página,
+            reduzindo o brilho e
+            suavizando contrastes intensos.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- OUTROS MODOS -->
+
+      <div class="screen-showcase">
+
+        <article class="screen-item">
+
+          <h3>Modo Foco</h3>
+
+          <p>
+            Demonstração do recurso
+            de destaque visual,
+            desenvolvido para auxiliar
+            a concentração.
+          </p>
+
+          <img
+            src="imagens/modo-foco.png"
+            alt="Página web com o modo foco do Neuroplugin ativado"
+            loading="lazy"
+          >
+
+        </article>
+
+
+        <article class="screen-item">
+
+          <h3>Modo Espaçado</h3>
+
+          <p>
+            Aplicação de ajustes
+            de espaçamento para
+            modificar a apresentação
+            dos textos.
+          </p>
+
+          <img
+            src="imagens/modo-espacado.png"
+            alt="Página web com o modo espaçado do Neuroplugin ativado"
+            loading="lazy"
+          >
+
+        </article>
+
+
+        <article class="screen-item">
+
+          <h3>Modo Disléxico</h3>
+
+          <p>
+            Demonstração de uma
+            configuração alternativa
+            para a apresentação
+            dos conteúdos textuais.
+          </p>
+
+          <img
+            src="imagens/modo-dislexico.png"
+            alt="Página web com o modo disléxico do Neuroplugin ativado"
+            loading="lazy"
+          >
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================
+         10. DESENVOLVIMENTO
+         =================================== -->
+
+    <section class="section">
+
+      <h2>09. Prototipação e desenvolvimento</h2>
+
+      <p>
+        A interface foi inicialmente
+        prototipada no Figma,
+        considerando princípios
+        de UX/UI e acessibilidade.
+      </p>
+
+      <p>
+        Posteriormente, a extensão
+        foi implementada utilizando
+        HTML, CSS e JavaScript,
+        com integração às APIs
+        do Google Chrome.
+      </p>
+
+      <p>
+        A arquitetura permitiu
+        aplicar ajustes visuais
+        às páginas visitadas,
+        gerenciar configurações
+        e combinar diferentes modos
+        de acessibilidade.
+      </p>
+
+      <div class="improvements">
+
+        <h3>Principais tecnologias utilizadas</h3>
+
+        <ul>
+          <li>
+            Figma para prototipação da interface.
+          </li>
+
+          <li>
+            HTML e CSS para a construção visual.
+          </li>
+
+          <li>
+            JavaScript para implementação
+            das funcionalidades.
+          </li>
+
+          <li>
+            Chrome Storage API para
+            persistência de preferências.
+          </li>
+
+          <li>
+            Content scripts para aplicação
+            dinâmica de ajustes nas páginas.
+          </li>
+        </ul>
+
+      </div>
+
+      <p>
+        Embora o desenvolvimento técnico
+        tenha sido uma parte importante,
+        as decisões de implementação
+        foram orientadas pelo objetivo
+        de oferecer uma experiência
+        simples, configurável
+        e reversível.
+      </p>
+
+    </section>
+
+
+    <!-- ===================================
+         11. TESTES
+         =================================== -->
+
+    <section class="section">
+
+      <h2>10. Testes e refinamentos</h2>
+
+      <p>
+        A extensão passou por testes
+        manuais para verificar o
+        funcionamento dos recursos
+        em diferentes páginas web.
+      </p>
+
+      <p>
+        Foram realizados testes
+        funcionais, de regressão,
+        de integração entre modos
+        e de reversibilidade
+        das alterações aplicadas.
+      </p>
+
+      <h3>Principais pontos avaliados</h3>
+
+      <ul>
+
+        <li>
+          Ativação e desativação
+          dos modos de acessibilidade.
+        </li>
+
+        <li>
+          Funcionamento simultâneo
+          de diferentes recursos.
+        </li>
+
+        <li>
+          Compatibilidade com páginas
+          que apresentam diferentes
+          estruturas visuais.
+        </li>
+
+        <li>
+          Restauração da aparência
+          original das páginas.
+        </li>
+
+        <li>
+          Identificação e correção
+          de conflitos entre estilos.
+        </li>
+
+      </ul>
+
+      <h3>Refinamentos realizados</h3>
+
+      <p>
+        Durante os testes, foram
+        identificadas inconsistências
+        relacionadas à combinação
+        de modos e à remoção de
+        estilos aplicados.
+      </p>
+
+      <p>
+        Essas situações orientaram
+        ajustes na lógica de ativação,
+        desativação e restauração
+        das configurações,
+        melhorando a estabilidade
+        da extensão.
+      </p>
+
+      <p class="note">
+        A validação descrita nesta etapa
+        corresponde a testes técnicos
+        e manuais. Testes de usabilidade
+        com participantes do público-alvo
+        permanecem como oportunidade
+        de evolução do projeto.
+      </p>
+
+    </section>
+
+
+    <!-- ===================================
+         12. RESULTADOS
+         =================================== -->
+
+    <section class="section">
+
+      <h2>11. Resultados e aprendizados</h2>
+
+      <p>
+        O projeto resultou em uma
+        extensão funcional para
+        Google Chrome, com diferentes
+        recursos de personalização
+        visual e de leitura.
+      </p>
+
+      <p>
+        Os testes realizados
+        permitiram verificar o
+        funcionamento dos modos,
+        identificar conflitos
+        de estilos e aplicar
+        correções durante o
+        desenvolvimento.
+      </p>
+
+      <p>
+        O principal aprendizado
+        foi compreender como
+        necessidades de acessibilidade
+        podem orientar decisões
+        de interface e também
+        influenciar a implementação
+        técnica de um produto digital.
+      </p>
+
+      <div class="highlight">
+
+        <p>
+          O Neuroplugin demonstrou
+          a importância de integrar
+          pesquisa, design e tecnologia
+          para desenvolver experiências
+          digitais mais adaptáveis
+          a diferentes necessidades.
+        </p>
+
+      </div>
+
+    </section>
+
+    </section>
+
+
+    <!-- ===================================
+         RODAPÉ
+         =================================== -->
+
+    <footer class="project-footer">
+
+      <p>
+        Projeto acadêmico desenvolvido
+        como Trabalho de Conclusão
+        de Curso em Ciência da Computação
+        na Universidade de Fortaleza (2025).
+      </p>
+
+      <a href="../../index.html" class="back">
+        ← Voltar aos projetos
+      </a>
+
+    </footer>
+
+  </main>
+
+</body>
+</html>

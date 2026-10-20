@@ -1,0 +1,702 @@
+
+/* =========================================
+   PORTFÓLIO UX/UI — PÁGINA DE PROJETO
+   ========================================= */
+
+/* VARIÁVEIS */
+
+:root {
+  --bg: #0e0e11;
+  --surface: #141418;
+  --surface-hover: #1a1a20;
+  --text: #f1f1f1;
+  --gray: #a0a0a0;
+  --primary: #b388ff;
+  --primary-soft: rgba(179, 136, 255, 0.15);
+  --border: #2a2a2f;
+}
+
+
+/* =========================================
+   BASE
+   ========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  transition: color 0.2s ease;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 4px;
+}
+
+
+/* =========================================
+   LAYOUT PRINCIPAL
+   ========================================= */
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+
+/* =========================================
+   BOTÃO VOLTAR
+   ========================================= */
+
+.back {
+  display: inline-block;
+  margin-bottom: 2rem;
+
+  color: var(--gray);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.back:hover {
+  color: var(--primary);
+}
+
+
+/* =========================================
+   TÍTULOS
+   ========================================= */
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  position: relative;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 4px;
+  height: 70%;
+
+  background-color: var(--primary);
+  border-radius: 2px;
+}
+
+h3 {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+/* =========================================
+   TEXTOS
+   ========================================= */
+
+p {
+  color: var(--gray);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  max-width: 720px;
+}
+
+.subtitle {
+  color: var(--gray);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 780px;
+  margin-bottom: 2rem;
+}
+
+.intro {
+  font-size: 1rem;
+  max-width: 780px;
+}
+
+
+/* =========================================
+   LISTAS
+   ========================================= */
+
+ul {
+  padding-left: 1.4rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+li {
+  color: var(--gray);
+  margin-bottom: 0.6rem;
+}
+
+
+/* =========================================
+   SEÇÕES
+   ========================================= */
+
+.section {
+  padding: 2rem;
+  margin-bottom: 2rem;
+
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.section h2 {
+  padding-left: 0.4rem;
+}
+
+.section h3 {
+  color: var(--text);
+}
+
+
+/* =========================================
+   TAGS
+   ========================================= */
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.tag {
+  display: inline-block;
+
+  background-color: var(--primary-soft);
+  border: 1px solid var(--border);
+  color: var(--primary);
+
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+
+  font-size: 0.75rem;
+
+  margin: 0;
+}
+
+
+/* =========================================
+   HERO / APRESENTAÇÃO
+   ========================================= */
+
+.hero {
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  max-width: 850px;
+}
+
+.hero .subtitle {
+  max-width: 780px;
+}
+
+
+/* =========================================
+   INFORMAÇÕES DO PROJETO
+   ========================================= */
+
+.project-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.project-info div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.project-info strong {
+  color: var(--text);
+  font-size: 0.85rem;
+}
+
+.project-info span {
+  color: var(--gray);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   IMAGENS — CONFIGURAÇÕES GERAIS
+   ========================================= */
+
+/*
+  As imagens não ultrapassam a largura
+  disponível e ficam centralizadas.
+*/
+
+.section img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  object-fit: contain;
+
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+
+/* =========================================
+   IMAGENS COM LEGENDA
+   ========================================= */
+
+.project-image {
+  width: 100%;
+  max-width: 850px;
+  margin: 2rem auto;
+}
+
+.project-image img {
+  width: 100%;
+  max-width: 850px;
+  height: auto;
+
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.project-image figcaption {
+  margin-top: 0.8rem;
+
+  color: var(--gray);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
+/* =========================================
+   IMAGENS DE TELAS INDIVIDUAIS
+   ========================================= */
+
+/*
+  Limita as telas individuais a 650px,
+  evitando imagens excessivamente grandes.
+*/
+
+.screen-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  margin-top: 2rem;
+}
+
+.screen-item {
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.screen-item:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.screen-item h3 {
+  color: var(--primary);
+  margin-top: 0;
+}
+
+.screen-item p {
+  max-width: 720px;
+}
+
+.screen-item img {
+  display: block;
+
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+
+  margin: 1.5rem auto 0;
+
+  object-fit: contain;
+
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+
+/* =========================================
+   ANTES E DEPOIS
+   ========================================= */
+
+.before-after-vertical {
+  margin-top: 2rem;
+}
+
+.before,
+.after {
+  margin-bottom: 3rem;
+}
+
+.before h3,
+.after h3 {
+  margin-bottom: 0.8rem;
+  color: var(--primary);
+}
+
+.before img,
+.after img {
+  display: block;
+
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+
+  margin: 1rem auto;
+
+  object-fit: contain;
+
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+/* =========================================
+   CARDS DAS QUATRO SOLUÇÕES
+   ========================================= */
+
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  margin-top: 2rem;
+}
+
+.solution-card {
+  padding: 1.5rem;
+
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.solution-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-3px);
+}
+
+.solution-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+.solution-card p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+
+/* =========================================
+   DESTAQUES DE CONTEÚDO
+   ========================================= */
+
+.highlight {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+
+  background-color: var(--primary-soft);
+  border-left: 3px solid var(--primary);
+  border-radius: 0 10px 10px 0;
+}
+
+.highlight p {
+  color: var(--text);
+  font-size: 1.1rem;
+  line-height: 1.7;
+
+  margin: 0;
+  max-width: none;
+}
+
+
+/* =========================================
+   MELHORIAS APLICADAS
+   ========================================= */
+
+.improvements {
+  margin: 2rem 0;
+  padding: 1.5rem;
+
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.improvements h3 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+.improvements ul {
+  margin-bottom: 0;
+}
+
+
+/* =========================================
+   OBSERVAÇÕES DOS TESTES
+   ========================================= */
+
+.note {
+  margin-top: 1.5rem;
+  padding: 1rem 1.2rem;
+
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+
+  color: var(--gray);
+  font-size: 0.85rem;
+}
+
+
+/* =========================================
+   RODAPÉ
+   ========================================= */
+
+.project-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+
+  border-top: 1px solid var(--border);
+}
+
+.project-footer p {
+  color: var(--gray);
+  font-size: 0.85rem;
+  margin-bottom: 2rem;
+}
+
+.project-footer .back {
+  margin-bottom: 0;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE — TABLETS
+   ========================================= */
+
+@media (max-width: 800px) {
+
+  .container {
+    padding: 3rem 1.5rem;
+  }
+
+  .project-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-image {
+    max-width: 100%;
+  }
+
+  .screen-item img {
+    max-width: 550px;
+  }
+
+  .before img,
+  .after img {
+    max-width: 550px;
+  }
+
+}
+
+
+/* =========================================
+   RESPONSIVIDADE — CELULARES
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .container {
+    padding: 2rem 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .subtitle {
+    font-size: 1.05rem;
+  }
+
+  .hero {
+    margin-bottom: 2rem;
+  }
+
+  .section {
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-info {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    padding: 1.25rem;
+  }
+
+  .solutions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .solution-card {
+    padding: 1.25rem;
+  }
+
+  .highlight {
+    padding: 1.25rem;
+  }
+
+  .highlight p {
+    font-size: 1rem;
+  }
+
+  .improvements {
+    padding: 1.25rem;
+  }
+
+  .screen-showcase {
+    gap: 2rem;
+  }
+
+  .screen-item img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .project-image img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .before img,
+  .after img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+}
+
+
+/* =========================================
+   PREFERÊNCIA POR MOVIMENTO REDUZIDO
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .solution-card {
+    transition: none;
+  }
+
+  .solution-card:hover {
+    transform: none;
+  }
+
+}
+
+
+/* Interface principal do Neuroplugin */
+img[src*="neuroplugin-interface"] {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 24px auto;
+  object-fit: contain;
+}
+
+/* Padronização das imagens dos modos */
+.screen-item img {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: contain;
+  object-position: center;
+  margin: 20px auto 0;
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+  img[src*="neuroplugin-interface"] {
+    max-width: 300px;
+  }
+
+  .screen-item img {
+    height: 220px;
+  }
+}
+
